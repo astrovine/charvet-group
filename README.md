@@ -233,7 +233,7 @@ This project is proprietary software. All rights reserved by Charvet Group.
 
 ## Contact
 
-For questions or support, please contact the development team.
+For questions or support, please contact me.
 
 ## Acknowledgments
 
