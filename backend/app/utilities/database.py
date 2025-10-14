@@ -15,10 +15,11 @@ PG_PORT = os.getenv("PG_PORT")
 
 engine = create_engine(
     f'postgresql://{PG_USER}:{PG_PASSWORD}@{PG_HOST}:{PG_PORT}/{PG_DBNAME}',
-    pool_size=5,                 
-    max_overflow=2,               
-    pool_recycle=300,            
-    pool_pre_ping=True            
+    pool_size=5,
+    max_overflow=2,
+    pool_recycle=300,
+    pool_pre_ping=True,
+    pool_timeout=30
 )
 
 
