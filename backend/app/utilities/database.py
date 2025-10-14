@@ -14,9 +14,12 @@ PG_HOST = os.getenv("PG_HOST")
 PG_PORT = os.getenv("PG_PORT")
 
 engine = create_engine(
-    f'postgresql://{PG_USER}:{PG_PASSWORD}@{PG_HOST}:{PG_PORT}/{PG_DBNAME}'
+    SQLALCHEMY_DATABASE_URL,
+    pool_size=5,
+    max_overflow=2,
+    pool_recycle=300,
+    pool_pre_ping=True
 )
-
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
