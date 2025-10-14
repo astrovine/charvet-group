@@ -129,7 +129,7 @@ async def get_location_performance(filters: data.DashboardFilters = Depends(), d
 
     df['total_sales'] = df[PRODUCTS].sum(axis=1)
     df_sales = df[df['total_sales'] > 0].copy()
-
+    df_sales['location'].replace('-', 'other', inplace=True)
     location_performance = df_sales.groupby('location').agg(
         total_units=('total_sales', 'sum'),
         avg_units_per_sale=('total_sales', 'mean'),
