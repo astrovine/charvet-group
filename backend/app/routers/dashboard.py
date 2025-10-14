@@ -262,9 +262,20 @@ async def upload_sales_data(db: Session = Depends(get_db), file: UploadFile = Fi
             missing_cols = required_columns - set(df.columns)
             raise HTTPException(status_code=400, detail=f"Missing required columns: {', '.join(missing_cols)}")
 
+        # Clean date column
         df['date'] = pd.to_datetime(df['date'], errors='coerce')
         if df['date'].isnull().any():
             raise HTTPException(status_code=400, detail="Invalid date format in 'date' column")
+
+        # Clean product columns - convert "-", empty strings, and NaN to 0.0
+        for product in PRODUCTS:
+            if product in df.columns:
+                df[product] = df[product].replace(['-', '', 'nan', 'NaN', 'null', 'None'], 0)
+                df[product] = pd.to_numeric(df[product], errors='coerce').fillna(0.0)
+        
+        # Clean phone_no column - convert to string and handle null values
+        if 'phone_no' in df.columns:
+            df['phone_no'] = df['phone_no'].fillna('').astype(str).replace('nan', '')
 
         records = df.to_dict(orient='records')
         for record in records:
