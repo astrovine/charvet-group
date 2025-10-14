@@ -50,7 +50,7 @@ async def get_dashboard_overview(filters: data.DashboardFilters = Depends(), db:
 
     df['total_sales'] = df[PRODUCTS].sum(axis=1)
     df_sales = df[df['total_sales'] > 0].copy()
-
+    df_sales['location'].replace('-', 'other', inplace=True)
     overview = {
         "total_records": len(df),
         "total_sales_records": len(df_sales),
