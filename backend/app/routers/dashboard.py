@@ -275,14 +275,12 @@ async def upload_sales_data(db: Session = Depends(get_db), file: UploadFile = Fi
                 location=record['location']
             ).first()
 
-        if existing_entry:
-            # If it exists, UPDATE it
-            for key, value in record.items():
-                setattr(existing_entry, key, value)
-        else:
-            # If it doesn't exist, INSERT it
-            new_entry = admin.SalesData(**record)
-            db.add(new_entry)
+            if existing_entry:
+                for key, value in record.items():
+                    setattr(existing_entry, key, value)
+            else:
+                new_entry = admin.SalesData(**record)
+                db.add(new_entry)
 
         db.commit()
         return {"message": f"Successfully processed {len(records)} records."}
