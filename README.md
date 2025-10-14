@@ -1,10 +1,9 @@
 # Charvet Group Sales Dashboard 🏛️
 
-A full-stack web application for managing and visualizing sales data, built with FastAPI and React. This dashboard provides comprehensive tools for tracking product sales, managing user accounts, and analyzing business performance.
+A full web application for managing and visualizing sales data, built with FastAPI and React. This dashboard provides comprehensive tools for tracking product sales, managing user accounts, and analyzing business performance.
 
 ## Overview
-
-The Charvet Group Sales Dashboard is designed to streamline sales operations and provide real-time insights into business metrics. The application features a secure authentication system, role-based access control, and an intuitive interface for data management and visualization.
+Engineered to automate sales tracking and provide real-time business intelligence, this platform transforms raw sales data into actionable insights through a secure, role-based system. Key features include JWT-based authentication with a multi-tiered permission model (admin vs. superadmin), a dynamic analytics dashboard with interactive data visualizations, and a data ingestion pipeline for bulk-processing sales records from Excel files.
 
 ## Features
 
@@ -15,6 +14,62 @@ The Charvet Group Sales Dashboard is designed to streamline sales operations and
 - **User Authentication**: Secure login and signup functionality
 - **Admin Panel**: Comprehensive tools for data management and user administration
 - **Responsive Design**: Optimized for desktop and mobile devices
+
+### Backend
+- **RESTful API**: Built with FastAPI for high performance
+- **JWT Authentication**: Secure token-based authentication system
+- **Database Management**: PostgreSQL with SQLAlchemy ORM
+- **User Management**: Role-based access control (Admin/Superadmin)
+- **Data Processing**: Sales data upload and processing capabilities
+- **API Documentation**: Auto-generated interactive API docs
+
+### Backend
+- **RESTful API**: Built with FastAPI for high performance
+- **JWT Authentication**: Secure token-based authentication system
+- **Database Management**: PostgreSQL with SQLAlchemy ORM
+- **User Management**: Role-based access control (Admin/Superadmin)
+- **Data Processing**: Sales data upload and processing capabilities
+- **API Documentation**: Auto-generated interactive API docs
+
+### Backend
+- **RESTful API**: Built with FastAPI for high performance
+- **JWT Authentication**: Secure token-based authentication system
+- **Database Management**: PostgreSQL with SQLAlchemy ORM
+- **User Management**: Role-based access control (Admin/Superadmin)
+- **Data Processing**: Sales data upload and processing capabilities
+- **API Documentation**: Auto-generated interactive API docs
+
+### Backend
+- **RESTful API**: Built with FastAPI for high performance
+- **JWT Authentication**: Secure token-based authentication system
+- **Database Management**: PostgreSQL with SQLAlchemy ORM
+- **User Management**: Role-based access control (Admin/Superadmin)
+- **Data Processing**: Sales data upload and processing capabilities
+- **API Documentation**: Auto-generated interactive API docs
+
+### Backend
+- **RESTful API**: Built with FastAPI for high performance
+- **JWT Authentication**: Secure token-based authentication system
+- **Database Management**: PostgreSQL with SQLAlchemy ORM
+- **User Management**: Role-based access control (Admin/Superadmin)
+- **Data Processing**: Sales data upload and processing capabilities
+- **API Documentation**: Auto-generated interactive API docs
+
+### Backend
+- **RESTful API**: Built with FastAPI for high performance
+- **JWT Authentication**: Secure token-based authentication system
+- **Database Management**: PostgreSQL with SQLAlchemy ORM
+- **User Management**: Role-based access control (Admin/Superadmin)
+- **Data Processing**: Sales data upload and processing capabilities
+- **API Documentation**: Auto-generated interactive API docs
+
+### Backend
+- **RESTful API**: Built with FastAPI for high performance
+- **JWT Authentication**: Secure token-based authentication system
+- **Database Management**: PostgreSQL with SQLAlchemy ORM
+- **User Management**: Role-based access control (Admin/Superadmin)
+- **Data Processing**: Sales data upload and processing capabilities
+- **API Documentation**: Auto-generated interactive API docs
 
 ### Backend
 - **RESTful API**: Built with FastAPI for high performance
