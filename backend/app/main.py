@@ -5,7 +5,7 @@ from .routers import auth
 from .utilities import database
 from .utilities.database import engine
 
-database.Base.metadata.create_all(bind=engine)
+# database.Base.metadata.create_all(bind=engine)
 app = FastAPI(
     title="Sales Dashboard API",
     description="Sales Dashboard API helps to manage sales data and provides insights through various endpoints."
