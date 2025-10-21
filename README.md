@@ -1,4 +1,4 @@
-# FOR Charvet Group
+# Charvet Group
 
 A full web application for managing and visualizing sales data, built with FastAPI and React. This dashboard provides comprehensive tools for tracking product sales, managing user accounts, and analyzing business performance.
 
